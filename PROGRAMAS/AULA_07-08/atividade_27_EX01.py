@@ -1,0 +1,12 @@
+qtd = float(input("Informe a quantidade das horas Trabalhadas no Mês: "))
+valor_hora = float(input("Informe o preço da sua hora Trabalhada: R$ ")) 
+total = (qtd * valor_hora)
+print("Seu Salário Bruto é : R$ " , total)
+IRRF = (total * 0.11)
+print( "Pagou ao IRRF : R$ " , IRRF ) 
+INSS = (total * 0.08)
+print("Pagou ao INSS : R$  " , INSS)
+SINDICATO = (total * 0.05)
+print("Pagou ao SINDICATO : R$  " , SINDICATO)
+salario_liquido = total - IRRF -INSS - SINDICATO
+print("Seu Salário Líquido é R$ " , salario_liquido) 
